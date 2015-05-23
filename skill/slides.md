@@ -22,6 +22,10 @@
 
 [https://github.com/ioos/secoora](https://github.com/ioos/secoora)
 
+# Using Notebooks for clarity
+
+![](images/notebook.png)
+
 # Obtaining the data
 
 ![](images/flow-chart.png)
