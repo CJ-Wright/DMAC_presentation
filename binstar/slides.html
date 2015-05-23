@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Filipe Fernandes, Rich Signell, and Vembu Subramanian" />
+  <title>IOOS Binstar Channel</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #2a211c; color: #bdae9d; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; background-color: #2a211c; color: #bdae9d; border-right: 1px solid #bdae9d; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #bdae9d; background-color: #2a211c; }
+code > span.kw { color: #43a8ed; font-weight: bold; }
+code > span.dt { text-decoration: underline; }
+code > span.dv { color: #44aa43; }
+code > span.bn { color: #44aa43; }
+code > span.fl { color: #44aa43; }
+code > span.ch { color: #049b0a; }
+code > span.st { color: #049b0a; }
+code > span.co { color: #0066ff; font-style: italic; }
+code > span.al { color: #ffff00; }
+code > span.fu { color: #ff9358; font-weight: bold; }
+code > span.er { font-weight: bold; }
+    </style>
+    <link rel="stylesheet" href="slides.css"/>
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">IOOS Binstar Channel</h1>
+    <h2 class="author">Filipe Fernandes, Rich Signell, and Vembu Subramanian</h2>
+    <h3 class="date">Silver Springs, May 27-29</h3>
+</section>
+
+<section id="what-is-a-binstar-channel" class="slide level1">
+<h1>What is a Binstar Channel?</h1>
+<ul>
+<li class="fragment">Binstar is a service that allows us to create and manage package repositories for conda</li>
+<li class="fragment">From their own webpage: &quot;Package Everything!&quot;</li>
+<li class="fragment">&quot;And share your repositories with clients or colleagues.&quot;</li>
+</ul>
+</section>
+<section id="the-ioos-channel" class="slide level1">
+<h1>The IOOS Channel</h1>
+<ul>
+<li class="fragment">108 packages</li>
+<li class="fragment">Linux, Windows and OSX</li>
+<li class="fragment">Some really hard to compile like <code>iris</code>, <code>nco</code> and <code>gridgen</code>...</li>
+<li class="fragment">...are now available via just <code>conda install -c ioos iris</code></li>
+</ul>
+</section>
+<section id="how-to-use-it" class="slide level1">
+<h1>How to use it?</h1>
+<pre class="sourceCode bash"><code class="sourceCode bash">
+<span class="kw">conda</span> config --add channels ioos
+
+<span class="ot">url=</span>https://raw.githubusercontent.com/ioos/conda-recipes/master/00_env_requirements/ioos
+
+<span class="kw">wget</span> <span class="ot">${url}</span>/ioos_req.txt
+
+<span class="kw">conda</span> create --yes -n IOOS --file ioos_req.txt python=2.7</code></pre>
+<div class="fragment">
+<p>That is it!</p>
+</div>
+</section>
+<section id="ioos-requirements-file" class="slide level1">
+<h1>IOOS requirements file</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">iris</td>
+<td style="text-align: left;">mpld3</td>
+<td style="text-align: left;">pyoos</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pandas</td>
+<td style="text-align: left;">folium</td>
+<td style="text-align: left;">rdflib</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">geojson</td>
+<td style="text-align: left;">requests</td>
+<td style="text-align: left;">ipython-notebook</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">xlrd</td>
+<td style="text-align: left;">mplleaflet</td>
+<td style="text-align: left;">oceans</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">qrcode</td>
+<td style="text-align: left;">utilities</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="downloads" class="slide level1">
+<h1>Downloads</h1>
+<figure>
+<img src="images/total_downloads.svg" />
+</figure>
+</section>
+<section id="packages-per-os" class="slide level1">
+<h1>Packages per OS</h1>
+<h2 id="linux-108">Linux: 108</h2>
+<h2 id="osx-106">OSX: 106</h2>
+<h2 id="windows-102">Windows: 102</h2>
+</section>
+<section id="how-we-do-it" class="slide level1">
+<h1>How we do it?</h1>
+<ul>
+<li class="fragment">Conda recipes are hosted on GitHub</li>
+<li class="fragment">Windows ➛ AppVeyor</li>
+<li class="fragment">OSX ➛ Travis-ci</li>
+<li class="fragment">Linux ➛ Centos6 docker container</li>
+</ul>
+</section>
+<section id="how-to-contribute" class="slide level1">
+<h1>How to contribute</h1>
+<ul>
+<li class="fragment">Revise the information on the Wiki</li>
+<li class="fragment">Report problems in our issue page</li>
+<li class="fragment">Requests packages</li>
+<li class="fragment">Pull Requests are even better ;-)</li>
+</ul>
+</section>
+<section id="prs" class="slide level1">
+<h1>PRs</h1>
+<figure>
+<img src="images/github_pr.png" />
+</figure>
+</section>
+<section id="issues" class="slide level1">
+<h1>Issues</h1>
+<figure>
+<img src="images/github_issues.png" />
+</figure>
+</section>
+<section id="thanks" class="slide level1">
+<h1>Thanks!</h1>
+<h2 id="httpsbinstar.orgioos">https://binstar.org/ioos</h2>
+<figure>
+<img src="images/compiling.png" alt="http://xkcd.com/303/" /><figcaption>http://xkcd.com/303/</figcaption>
+</figure>
+<p>Acknowledgements:</p>
+<p><em>We would like to thank SECOORA for the funding support. We would also like to thank the contributions of members of NOAA/IOOS, and Principal investigators.</em></p>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/total_downloads0.svg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/total_downloads1.svg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/total_downloads2.svg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/total_downloads3.svg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="images/total_downloads4.svg" />
+</figure>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>

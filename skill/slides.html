@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Filipe Fernandes, Rich Signell, and Vembu Subramanian" />
+  <title>Model Skill for SECOORA Ocean Models</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="slides.css"/>
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Model Skill for SECOORA Ocean Models</h1>
+    <h2 class="author">Filipe Fernandes, Rich Signell, and Vembu Subramanian</h2>
+    <h3 class="date">Silver Springs, May 27-29</h3>
+</section>
+
+<section id="why" class="slide level1">
+<h1>Why?</h1>
+<div class="fragment">
+<figure>
+<img src="images/stickers.png" />
+</figure>
+</div>
+</section>
+<section id="and" class="slide level1">
+<h1>and</h1>
+<figure>
+<img src="images/obs_served.png" />
+</figure>
+<div class="fragment">
+<h2 id="the-right-question-is-why-not">The right question is: Why not?</h2>
+</div>
+</section>
+<section id="open-development" class="slide level1">
+<h1>Open development</h1>
+<figure>
+<img src="images/opendev.png" />
+</figure>
+<p><a href="https://github.com/ioos/secoora">https://github.com/ioos/secoora</a></p>
+</section>
+<section id="obtaining-the-data" class="slide level1">
+<h1>Obtaining the data</h1>
+<figure>
+<img src="images/flow-chart.png" />
+</figure>
+</section>
+<section id="matching-observations-and-models" class="slide level1">
+<h1>Matching Observations and Models</h1>
+<figure>
+<img src="images/nearest.png" />
+</figure>
+</section>
+<section id="displaying-the-results" class="slide level1">
+<h1>Displaying the results</h1>
+<figure>
+<img src="images/mapa.png" />
+</figure>
+</section>
+<section id="quick-demo" class="slide level1">
+<h1>Quick demo</h1>
+<figure>
+<img src="images/timeSeries.png" />
+</figure>
+<p><a href="http://ocefpaf.github.io/secoora/comparisons/timeSeries/ssh/">http://ocefpaf.github.io/secoora/comparisons/timeSeries/ssh/</a></p>
+</section>
+<section id="the-next-version..." class="slide level1">
+<h1>The next version...</h1>
+<figure>
+<img src="images/next_skill.png" />
+</figure>
+</section>
+<section id="featuring-more-visualizations-too." class="slide level1">
+<h1>... featuring more visualizations too.</h1>
+<figure>
+<img src="images/glider.png" />
+</figure>
+</section>
+<section id="including-hf-radar" class="slide level1">
+<h1>Including HF-Radar</h1>
+<figure>
+<img src="images/HFRadar.png" />
+</figure>
+</section>
+<section id="thanks" class="slide level1">
+<h1>Thanks!</h1>
+<h3 id="httpocefpaf.github.iosecoora"><a href="http://ocefpaf.github.io/secoora/">http://ocefpaf.github.io/secoora/</a></h3>
+<p><span class="math">\[\mathit{MSE} = \frac{\sum_{t=1}^N {E_t^2}}{N}\]</span></p>
+<p><span class="math">\[\mathit{SS} = 1- \frac{\mathit{MSE}_\text{forecast}}{\mathit{MSE}_\text{ref}}\]</span></p>
+<p>Acknowledgements:</p>
+<p><em>We would like to thank SECOORA for the funding support. We would also like to thank the contributions of members of NOAA/IOOS, and Principal investigators.</em></p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
