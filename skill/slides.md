@@ -1,6 +1,8 @@
 % Model Skill for SECOORA Ocean Models 
-% Filipe Fernandes, Rich Signell, and Vembu Subramanian
+% [Filipe Fernandes](https://github.com/ocefpaf), [Rich Signell](https://github.com/rsignell-usgs), and [Vembu Subramanian](https://github.com/vembus)
 % Silver Springs, May 27-29
+
+## Exploiting IOOS: A Distributed, Standards-Based Framework and Open-Source Software Stack for Searching, Accessing, Analyzing and Visualizing Met-Ocean Data
 
 # Why?
 
@@ -57,14 +59,15 @@
 
 # Thanks!
  
-### [http://ocefpaf.github.io/secoora/](http://ocefpaf.github.io/secoora/)
+### [http://ocefpaf.github.io/secoora](http://ocefpaf.github.io/secoora)
+
+![](images/phd030314s.gif)
+[http://www.phdcomics.com/comics.php?f=1687](http://www.phdcomics.com/comics.php?f=1687)
+
+<!-- $$\mathit{MSE} = \frac{\sum_{t=1}^N {E_t^2}}{N}$$ -->
+<!-- $$\mathit{SS} = 1- \frac{\mathit{MSE}_\text{forecast}}{\mathit{MSE}_\text{ref}}$$ -->
 
 
-$$\mathit{MSE} = \frac{\sum_{t=1}^N {E_t^2}}{N}$$
-
-$$\mathit{SS} = 1- \frac{\mathit{MSE}_\text{forecast}}{\mathit{MSE}_\text{ref}}$$
-
-
-Acknowledgements:
+### Acknowledgements
 
 *We would like to thank SECOORA for the funding support. We  would also like to thank the contributions of members of NOAA/IOOS, and Principal investigators.*
