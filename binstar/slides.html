@@ -67,9 +67,7 @@ code > span.er { font-weight: bold; }
 <pre class="sourceCode bash"><code class="sourceCode bash">
 <span class="kw">conda</span> config --add channels ioos
 
-<span class="ot">url=</span>https://raw.githubusercontent.com/ioos/conda-recipes/master/00_env_requirements/ioos
-
-<span class="kw">wget</span> <span class="ot">${url}</span>/ioos_req.txt
+<span class="kw">wget</span> http://bit.ly/ioos_req
 
 <span class="kw">conda</span> create --yes -n IOOS --file ioos_req.txt python=2.7</code></pre>
 <div class="fragment">
@@ -124,16 +122,16 @@ code > span.er { font-weight: bold; }
 <h1>How we do it?</h1>
 <ul>
 <li class="fragment">Conda recipes are hosted on GitHub</li>
-<li class="fragment">Windows ➛ AppVeyor</li>
-<li class="fragment">OSX ➛ Travis-ci</li>
-<li class="fragment">Linux ➛ Centos6 docker container</li>
+<li class="fragment">AppVeyor ➛ Windows</li>
+<li class="fragment">Travis-CI ➛ OSX</li>
+<li class="fragment">Centos (docker container) ➛ Linux</li>
 </ul>
 </section>
 <section id="how-to-contribute" class="slide level1">
-<h1>How to contribute</h1>
+<h1>How to contribute?</h1>
 <ul>
-<li class="fragment">Revise the information on the Wiki</li>
-<li class="fragment">Report problems in our issue page</li>
+<li class="fragment">Improve the <a href="https://github.com/ioos/conda-recipes/wiki">Wiki</a></li>
+<li class="fragment">Report problems in our <a href="https://github.com/ioos/conda-recipes/issues">Issues page</a></li>
 <li class="fragment">Requests packages</li>
 <li class="fragment">Pull Requests are even better ;-)</li>
 </ul>
@@ -152,7 +150,7 @@ code > span.er { font-weight: bold; }
 </section>
 <section id="thanks" class="slide level1">
 <h1>Thanks!</h1>
-<h2 id="httpsbinstar.orgioos">https://binstar.org/ioos</h2>
+<h3 id="httpsbinstar.orgioos"><a href="https://binstar.org/ioos">https://binstar.org/ioos</a></h3>
 <figure>
 <img src="images/compiling.png" alt="http://xkcd.com/303/" /><figcaption>http://xkcd.com/303/</figcaption>
 </figure>

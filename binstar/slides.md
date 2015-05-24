@@ -24,9 +24,7 @@
 
 conda config --add channels ioos
 
-url=https://raw.githubusercontent.com/ioos/conda-recipes/master/00_env_requirements/ioos
-
-wget ${url}/ioos_req.txt
+wget http://bit.ly/ioos_req
 
 conda create --yes -n IOOS --file ioos_req.txt python=2.7
 ```
@@ -59,14 +57,14 @@ qrcode  utilities
 # How we do it?
 
 > - Conda recipes are hosted on GitHub
-> - Windows &#10139; AppVeyor
-> - OSX &#10139; Travis-ci
-> - Linux &#10139; Centos6 docker container
+> - AppVeyor &#10139; Windows
+> - Travis-CI &#10139; OSX
+> - Centos (docker container) &#10139; Linux
 
-# How to contribute
+# How to contribute?
 
-> - Revise the information on the Wiki 
-> - Report problems in our issue page
+> - Improve the [Wiki](https://github.com/ioos/conda-recipes/wiki)
+> - Report problems in our [Issues page](https://github.com/ioos/conda-recipes/issues)
 > - Requests packages
 > - Pull Requests are even better ;-)
 
@@ -80,7 +78,7 @@ qrcode  utilities
 
 # Thanks!
  
-## https://binstar.org/ioos
+### [https://binstar.org/ioos](https://binstar.org/ioos)
 
 ![http://xkcd.com/303/](images/compiling.png)
 
