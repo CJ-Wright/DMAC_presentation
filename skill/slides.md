@@ -32,7 +32,7 @@
 
 # Matching Observations and Models
 
-![](images/nearest.png)
+![](images/nearest.svg)
 
 # Displaying the results
 
