@@ -22,7 +22,7 @@
 
 [https://github.com/ioos/secoora](https://github.com/ioos/secoora)
 
-# Using Notebooks for clarity
+# Ipython notebooks
 
 ![](images/notebook.png)
 
