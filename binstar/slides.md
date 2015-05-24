@@ -1,5 +1,5 @@
 % IOOS Binstar Channel
-% Filipe Fernandes, Rich Signell, and Vembu Subramanian
+% [Filipe Fernandes](https://github.com/ocefpaf), [Rich Signell](https://github.com/rsignell-usgs), and [Vembu Subramanian](https://github.com/vembus)
 % Silver Springs, May 27-29
 
 ---
@@ -82,7 +82,7 @@ qrcode  utilities
 
 ![http://xkcd.com/303/](images/compiling.png)
 
-Acknowledgements:
+### Acknowledgements
 
 *We would like to thank SECOORA for the funding support. We  would also like to thank the contributions of members of NOAA/IOOS, and Principal investigators.*
 
