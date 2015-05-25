@@ -1,6 +1,6 @@
 % Model Skill for SECOORA Ocean Models 
 % [Filipe Fernandes](https://github.com/ocefpaf), [Rich Signell](https://github.com/rsignell-usgs), and [Vembu Subramanian](https://github.com/vembus)
-% Silver Springs, May 27-29
+% Silver Springs, May 28th
 
 ## Exploiting IOOS: A Distributed, Standards-Based Framework and Open-Source Software Stack for Searching, Accessing, Analyzing and Visualizing Met-Ocean Data
 
@@ -30,7 +30,7 @@
 
 # Obtaining the data
 
-![](images/flow-chart.png)
+![](images/data_flow.svg)
 
 # Matching Observations and Models
 
