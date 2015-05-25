@@ -59,8 +59,6 @@
 
 # Thanks!
  
-### [http://ocefpaf.github.io/secoora](http://ocefpaf.github.io/secoora)
-
 ![](images/phd030314s.gif)
 [http://www.phdcomics.com/comics.php?f=1687](http://www.phdcomics.com/comics.php?f=1687)
 
