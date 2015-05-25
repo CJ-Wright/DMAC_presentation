@@ -1,6 +1,6 @@
 % IOOS Binstar Channel
 % [Filipe Fernandes](https://github.com/ocefpaf), [Rich Signell](https://github.com/rsignell-usgs), and [Vembu Subramanian](https://github.com/vembus)
-% Silver Springs, May 27-29
+% Silver Springs, May 28th
 
 ---
 
@@ -27,6 +27,8 @@ conda config --add channels ioos
 wget http://bit.ly/ioos_req
 
 conda create --yes -n IOOS --file ioos_req.txt python=2.7
+
+export PATH=$HOME/miniconda/bin:$PATH && source activate IOOS
 ```
 
 . . .
@@ -57,16 +59,9 @@ qrcode  utilities
 # How we do it?
 
 > - Conda recipes are hosted on GitHub
-> - AppVeyor &#10139; Windows
-> - Travis-CI &#10139; OSX
-> - Centos (docker container) &#10139; Linux
-
-# How to contribute?
-
-> - Improve the [Wiki](https://github.com/ioos/conda-recipes/wiki)
-> - Report problems in our [Issues page](https://github.com/ioos/conda-recipes/issues)
-> - Requests packages
-> - Pull Requests are even better ;-)
+> - [AppVeyor](http://www.appveyor.com/) &#10139; Windows
+> - [Travis-CI](https://travis-ci.org/) &#10139; OSX
+> - [Centos docker container](https://registry.hub.docker.com/u/ocefpaf/centos64-conda-obvious-ci/) &#10139; Linux
 
 # PRs
 
@@ -75,6 +70,14 @@ qrcode  utilities
 # Issues
 
 ![](images/github_issues.png)
+
+
+# How to contribute?
+
+> - Improve the [Wiki](https://github.com/ioos/conda-recipes/wiki)
+> - Report problems in our [Issues page](https://github.com/ioos/conda-recipes/issues)
+> - Requests packages
+> - Pull Requests are even better ;-)
 
 # Thanks!
  
