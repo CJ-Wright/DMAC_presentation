@@ -38,13 +38,12 @@
 
 # Displaying the results
 
-![](images/mapa.png)
+<!-- ![](images/mapa.png) -->
+<iframe width="750" height="500" src="images/2014-07-07/mapa.html" frameborder="0" allowfullscreen></iframe>
 
-# Quick demo
+# [http://bit.ly/secoora_skill](http://bit.ly/secoora_skill)
+<iframe width="480" height="640" src="http://ocefpaf.github.io/secoora" frameborder="0" allowfullscreen></iframe>
 
-![](images/timeSeries.png)
-
-[http://ocefpaf.github.io/secoora/comparisons/timeSeries/ssh/](http://ocefpaf.github.io/secoora/comparisons/timeSeries/ssh/)
 
 # The next version...
 
@@ -55,7 +54,8 @@
 
 # Including HF-Radar
 
-![](images/HFRadar.png)
+<!-- ![](images/HFRadar.png) -->
+<iframe width="750" height="500" src="images/hf_mapa.html" frameborder="0" allowfullscreen></iframe>
 
 # Thanks!
  
