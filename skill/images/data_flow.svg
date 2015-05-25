@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="16cm" height="18cm" viewBox="613 33 308 353" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <g>
+      <path style="fill: #6495ed" d="M 685.925 53.5 C 722.355,39.625 740.57,35 777,35 C 813.43,35 831.645,39.625 868.075,53.5 L 868.075,127.5 C 831.645,141.375 813.43,146 777,146 C 740.57,146 722.355,141.375 685.925,127.5 L 685.925,53.5z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 685.925 53.5 C 722.355,39.625 740.57,35 777,35 C 813.43,35 831.645,39.625 868.075,53.5 L 868.075,127.5 C 831.645,141.375 813.43,146 777,146 C 740.57,146 722.355,141.375 685.925,127.5 L 685.925,53.5"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 685.925 53.5 C 722.355,67.375 740.57,72 777,72 C 813.43,72 831.645,67.375 868.075,53.5"/>
+      <text font-size="12.8" style="fill: #fffff0;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="777" y="94.15">
+        <tspan x="777" y="94.15">Observational and</tspan>
+        <tspan x="777" y="110.15">Modeled Data</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" d="M 685.925,104.375 A 54.4019,54.4019 0 0 0 647.477,206.091"/>
+      <polygon style="fill: #fffff0" points="654.466,208.515 643.619,211.227 647.144,206.888 645.788,201.465 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" points="654.466,208.515 643.619,211.227 647.144,206.888 645.788,201.465 "/>
+    </g>
+    <g>
+      <polygon style="fill: #6495ed" points="665.384,185 760,185 742.529,233 647.913,233 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="665.384,185 760,185 742.529,233 647.913,233 "/>
+      <text font-size="12.8" style="fill: #fffff0;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="703.957" y="211.65">
+        <tspan x="703.957" y="211.65">THREDDS</tspan>
+      </text>
+    </g>
+    <g>
+      <polygon style="fill: #6495ed" points="825.371,185.4 919.987,185.4 902.516,233.4 807.9,233.4 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="825.371,185.4 919.987,185.4 902.516,233.4 807.9,233.4 "/>
+      <text font-size="12.8" style="fill: #fffff0;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="863.943" y="212.05">
+        <tspan x="863.943" y="212.05">CSW</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" x1="751.265" y1="209" x2="806.899" y2="209.34"/>
+      <polygon style="fill: #fffff0" points="814.399,209.386 804.369,214.325 806.899,209.34 804.43,204.325 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" points="814.399,209.386 804.369,214.325 806.899,209.34 804.43,204.325 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" x1="855.208" y1="233.4" x2="805.022" y2="292.575"/>
+      <polygon style="fill: #fffff0" points="800.171,298.295 802.826,287.434 805.022,292.575 810.453,293.902 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" points="800.171,298.295 802.826,287.434 805.022,292.575 810.453,293.902 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" x1="695.221" y1="233" x2="725.762" y2="291.373"/>
+      <polygon style="fill: #fffff0" points="729.238,298.019 720.172,291.476 725.762,291.373 729.033,286.84 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #fffff0" points="729.238,298.019 720.172,291.476 725.762,291.373 729.033,286.84 "/>
+    </g>
+    <g>
+      <path style="fill: #6495ed" d="M 696.05 300 L 832.95,300 C 853.485,317 860.33,325.5 860.33,342.5 C 860.33,359.5 853.485,368 832.95,385 L 696.05,385 L 668.67,342.5 L 696.05,300z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 696.05 300 L 832.95,300 C 853.485,317 860.33,325.5 860.33,342.5 C 860.33,359.5 853.485,368 832.95,385 L 696.05,385 L 668.67,342.5 L 696.05,300"/>
+      <text font-size="12.8" style="fill: #fffff0;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="764.5" y="328.9">
+        <tspan x="764.5" y="328.9">Data QA/QC and</tspan>
+        <tspan x="764.5" y="344.9">Model-Observation</tspan>
+        <tspan x="764.5" y="360.9">matching</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
