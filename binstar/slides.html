@@ -42,7 +42,7 @@ code > span.er { font-weight: bold; }
 <section>
     <h1 class="title">IOOS Binstar Channel</h1>
     <h2 class="author"><a href="https://github.com/ocefpaf">Filipe Fernandes</a>, <a href="https://github.com/rsignell-usgs">Rich Signell</a>, and <a href="https://github.com/vembus">Vembu Subramanian</a></h2>
-    <h3 class="date">Silver Springs, May 27-29</h3>
+    <h3 class="date">Silver Springs, May 28th</h3>
 </section>
 
 <section id="what-is-a-binstar-channel" class="slide level1">
@@ -69,7 +69,9 @@ code > span.er { font-weight: bold; }
 
 <span class="kw">wget</span> http://bit.ly/ioos_req
 
-<span class="kw">conda</span> create --yes -n IOOS --file ioos_req.txt python=2.7</code></pre>
+<span class="kw">conda</span> create --yes -n IOOS --file ioos_req.txt python=2.7
+
+<span class="kw">export</span> <span class="ot">PATH=$HOME</span>/miniconda/bin:<span class="ot">$PATH</span> <span class="kw">&amp;&amp;</span> <span class="kw">source</span> activate IOOS</code></pre>
 <div class="fragment">
 <p>That is it!</p>
 </div>
@@ -122,18 +124,9 @@ code > span.er { font-weight: bold; }
 <h1>How we do it?</h1>
 <ul>
 <li class="fragment">Conda recipes are hosted on GitHub</li>
-<li class="fragment">AppVeyor ➛ Windows</li>
-<li class="fragment">Travis-CI ➛ OSX</li>
-<li class="fragment">Centos (docker container) ➛ Linux</li>
-</ul>
-</section>
-<section id="how-to-contribute" class="slide level1">
-<h1>How to contribute?</h1>
-<ul>
-<li class="fragment">Improve the <a href="https://github.com/ioos/conda-recipes/wiki">Wiki</a></li>
-<li class="fragment">Report problems in our <a href="https://github.com/ioos/conda-recipes/issues">Issues page</a></li>
-<li class="fragment">Requests packages</li>
-<li class="fragment">Pull Requests are even better ;-)</li>
+<li class="fragment"><a href="http://www.appveyor.com/">AppVeyor</a> ➛ Windows</li>
+<li class="fragment"><a href="https://travis-ci.org/">Travis-CI</a> ➛ OSX</li>
+<li class="fragment"><a href="https://registry.hub.docker.com/u/ocefpaf/centos64-conda-obvious-ci/">Centos docker container</a> ➛ Linux</li>
 </ul>
 </section>
 <section id="prs" class="slide level1">
@@ -147,6 +140,15 @@ code > span.er { font-weight: bold; }
 <figure>
 <img src="images/github_issues.png" />
 </figure>
+</section>
+<section id="how-to-contribute" class="slide level1">
+<h1>How to contribute?</h1>
+<ul>
+<li class="fragment">Improve the <a href="https://github.com/ioos/conda-recipes/wiki">Wiki</a></li>
+<li class="fragment">Report problems in our <a href="https://github.com/ioos/conda-recipes/issues">Issues page</a></li>
+<li class="fragment">Requests packages</li>
+<li class="fragment">Pull Requests are even better ;-)</li>
+</ul>
 </section>
 <section id="thanks" class="slide level1">
 <h1>Thanks!</h1>
