@@ -40,7 +40,7 @@
 <iframe width="750" height="500" src="images/2014-07-07/mapa.html" frameborder="0" allowfullscreen></iframe>
 
 # [http://bit.ly/secoora_skill](http://bit.ly/secoora_skill)
-<iframe width="480" height="640" src="http://ocefpaf.github.io/secoora" frameborder="0" allowfullscreen></iframe>
+<iframe width="480" height="640" src="https://ocefpaf.github.io/secoora" frameborder="0" allowfullscreen></iframe>
 
 
 # The next version...
