@@ -3,11 +3,11 @@
 
 Rendered versions:
 
-https://ocefpaf.github.io/DMAC_presentation/binstar/slides.html
+http://ocefpaf.github.io/DMAC_presentation/binstar/slides.html
 
 and
 
-https://ocefpaf.github.io/DMAC_presentation/skill/slides.html
+http://ocefpaf.github.io/DMAC_presentation/skill/slides.html
 
 Use the Makefile to create and manage the slides:
 
