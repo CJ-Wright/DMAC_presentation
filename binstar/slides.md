@@ -24,7 +24,7 @@
 
 conda config --add channels ioos
 
-wget http://bit.ly/ioos_req
+wget http://bit.ly/ioos_req -O ioos_req.txt
 
 conda create --yes -n IOOS --file ioos_req.txt python=2.7
 
@@ -80,7 +80,7 @@ qrcode  utilities
 > - Pull Requests are even better ;-)
 
 # Thanks!
- 
+
 ### [https://binstar.org/ioos](https://binstar.org/ioos)
 
 ![http://xkcd.com/303/](images/compiling.png)
