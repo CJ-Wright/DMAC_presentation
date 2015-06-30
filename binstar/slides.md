@@ -12,7 +12,7 @@
 
 # The IOOS Channel
 
-> - 108 packages
+> - 107 packages
 > - Linux, Windows and OSX
 > - Some really hard to compile like `iris`, `nco` and `gridgen`...
 > - ...are now available via just `conda install -c ioos iris`
@@ -48,13 +48,12 @@ qrcode  utilities
 
 # Downloads
 
-![](images/total_downloads.svg)
+![](images/downloads.svg)
 
 # Packages per OS
 
-## Linux: 108
-## OSX: 106
-## Windows: 102
+## Linux and OSX: 107
+## Windows: 90
 
 # How we do it?
 
@@ -88,24 +87,3 @@ qrcode  utilities
 ### Acknowledgements
 
 *We would like to thank SECOORA for the funding support. We  would also like to thank the contributions of members of NOAA/IOOS, and Principal investigators.*
-
-
----
-
-![](images/total_downloads0.svg)
-
----
-
-![](images/total_downloads1.svg)
-
----
-
-![](images/total_downloads2.svg)
-
----
-
-![](images/total_downloads3.svg)
-
----
-
-![](images/total_downloads4.svg)

@@ -12,7 +12,7 @@ slides.html : slides.md
 # 	pandoc $< -o $@ --mathjax --standalone --table-of-contents --write=revealjs --css slides.css --highlight-style=espresso
 
 serve:
-	python -m SimpleHTTPServer
+	python3 -m http.server 8080
 
 clean:
 	-rm $(ALL)

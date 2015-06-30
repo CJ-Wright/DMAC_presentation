@@ -8,41 +8,60 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
-    <style type="text/css">code{white-space: pre;}</style>
-    <style type="text/css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
 table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
   margin: 0; padding: 0; vertical-align: baseline; border: none; }
 table.sourceCode { width: 100%; line-height: 100%; background-color: #2a211c; color: #bdae9d; }
 td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; background-color: #2a211c; color: #bdae9d; border-right: 1px solid #bdae9d; }
 td.sourceCode { padding-left: 5px; }
 pre, code { color: #bdae9d; background-color: #2a211c; }
-code > span.kw { color: #43a8ed; font-weight: bold; }
-code > span.dt { text-decoration: underline; }
-code > span.dv { color: #44aa43; }
-code > span.bn { color: #44aa43; }
-code > span.fl { color: #44aa43; }
-code > span.ch { color: #049b0a; }
-code > span.st { color: #049b0a; }
-code > span.co { color: #0066ff; font-style: italic; }
-code > span.al { color: #ffff00; }
-code > span.fu { color: #ff9358; font-weight: bold; }
-code > span.er { font-weight: bold; }
-    </style>
-    <link rel="stylesheet" href="slides.css"/>
-    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-    <script>
-      if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-      }
-    </script>
-    <!--[if lt IE 9]>
-    <script src="reveal.js/lib/js/html5shiv.js"></script>
-    <![endif]-->
+code > span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+code > span.dt { text-decoration: underline; } /* DataType */
+code > span.dv { color: #44aa43; } /* DecVal */
+code > span.bn { color: #44aa43; } /* BaseN */
+code > span.fl { color: #44aa43; } /* Float */
+code > span.ch { color: #049b0a; } /* Char */
+code > span.st { color: #049b0a; } /* String */
+code > span.co { color: #0066ff; font-style: italic; } /* Comment */
+code > span.al { color: #ffff00; } /* Alert */
+code > span.fu { color: #ff9358; font-weight: bold; } /* Function */
+code > span.er { color: #ffff00; font-weight: bold; } /* Error */
+code > span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+code > span.cn { } /* Constant */
+code > span.sc { color: #049b0a; } /* SpecialChar */
+code > span.vs { color: #049b0a; } /* VerbatimString */
+code > span.ss { color: #049b0a; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { } /* Variable */
+code > span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+code > span.op { } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { font-weight: bold; } /* Preprocessor */
+code > span.at { } /* Attribute */
+code > span.do { color: #0066ff; font-style: italic; } /* Documentation */
+code > span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+code > span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+  <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+  <script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'reveal.js/css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
   <div class="reveal">
@@ -65,7 +84,7 @@ code > span.er { font-weight: bold; }
 <section id="the-ioos-channel" class="slide level1">
 <h1>The IOOS Channel</h1>
 <ul>
-<li class="fragment">108 packages</li>
+<li class="fragment">107 packages</li>
 <li class="fragment">Linux, Windows and OSX</li>
 <li class="fragment">Some really hard to compile like <code>iris</code>, <code>nco</code> and <code>gridgen</code>...</li>
 <li class="fragment">...are now available via just <code>conda install -c ioos iris</code></li>
@@ -73,14 +92,14 @@ code > span.er { font-weight: bold; }
 </section>
 <section id="how-to-use-it" class="slide level1">
 <h1>How to use it?</h1>
-<pre class="sourceCode bash"><code class="sourceCode bash">
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">
 <span class="kw">conda</span> config --add channels ioos
 
 <span class="kw">wget</span> http://bit.ly/ioos_req -O ioos_req.txt
 
 <span class="kw">conda</span> create --yes -n IOOS --file ioos_req.txt python=2.7
 
-<span class="kw">export</span> <span class="ot">PATH=$HOME</span>/miniconda/bin:<span class="ot">$PATH</span> <span class="kw">&amp;&amp;</span> <span class="kw">source</span> activate IOOS</code></pre>
+<span class="kw">export</span> <span class="ot">PATH=$HOME</span>/miniconda/bin:<span class="ot">$PATH</span> <span class="kw">&amp;&amp;</span> <span class="kw">source</span> activate IOOS</code></pre></div>
 <div class="fragment">
 <p>That is it!</p>
 </div>
@@ -120,14 +139,13 @@ code > span.er { font-weight: bold; }
 <section id="downloads" class="slide level1">
 <h1>Downloads</h1>
 <figure>
-<img src="images/total_downloads.svg" />
+<img src="images/total_downloads.svg" alt="" />
 </figure>
 </section>
 <section id="packages-per-os" class="slide level1">
 <h1>Packages per OS</h1>
-<h2 id="linux-108">Linux: 108</h2>
-<h2 id="osx-106">OSX: 106</h2>
-<h2 id="windows-102">Windows: 102</h2>
+<h2 id="linux-and-osx-107">Linux and OSX: 107</h2>
+<h2 id="windows-90">Windows: 90</h2>
 </section>
 <section id="how-we-do-it" class="slide level1">
 <h1>How we do it?</h1>
@@ -141,13 +159,13 @@ code > span.er { font-weight: bold; }
 <section id="prs" class="slide level1">
 <h1>PRs</h1>
 <figure>
-<img src="images/github_pr.png" />
+<img src="images/github_pr.png" alt="" />
 </figure>
 </section>
 <section id="issues" class="slide level1">
 <h1>Issues</h1>
 <figure>
-<img src="images/github_issues.png" />
+<img src="images/github_issues.png" alt="" />
 </figure>
 </section>
 <section id="how-to-contribute" class="slide level1">
@@ -171,31 +189,31 @@ code > span.er { font-weight: bold; }
 <section class="slide level1">
 
 <figure>
-<img src="images/total_downloads0.svg" />
+<img src="images/total_downloads0.svg" alt="" />
 </figure>
 </section>
 <section class="slide level1">
 
 <figure>
-<img src="images/total_downloads1.svg" />
+<img src="images/total_downloads1.svg" alt="" />
 </figure>
 </section>
 <section class="slide level1">
 
 <figure>
-<img src="images/total_downloads2.svg" />
+<img src="images/total_downloads2.svg" alt="" />
 </figure>
 </section>
 <section class="slide level1">
 
 <figure>
-<img src="images/total_downloads3.svg" />
+<img src="images/total_downloads3.svg" alt="" />
 </figure>
 </section>
 <section class="slide level1">
 
 <figure>
-<img src="images/total_downloads4.svg" />
+<img src="images/total_downloads4.svg" alt="" />
 </figure>
 </section>
     </div>
@@ -203,17 +221,19 @@ code > span.er { font-weight: bold; }
 
 
   <script src="reveal.js/lib/js/head.min.js"></script>
-  <script src="reveal.js/js/reveal.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
 
   <script>
 
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+        controls: true,         // Display controls in the bottom right corner
+        progress: true,         // Display a presentation progress bar
+        history: true,          // Push each slide change to the browser history
+        center: true,                       // Vertical centering of slides
+        maxScale: 1.5,                  // Bounds for smallest/largest possible content scale
+        slideNumber: false,                // Display the page number of the current slide
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
