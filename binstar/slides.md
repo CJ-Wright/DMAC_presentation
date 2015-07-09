@@ -1,44 +1,24 @@
-% Conda: A love and hate story
+% IOOS Binstar Channel
+% [Filipe Fernandes](https://github.com/ocefpaf), [Rich Signell](https://github.com/rsignell-usgs), and [Vembu Subramanian](https://github.com/vembus)
+% Silver Springs, May 28th
 
 ---
 
-# Who am I?
+# What is a Binstar Channel?
 
-![](images/twitter.png)
+> - Binstar is a service that allows us to create and manage package repositories for conda
+> - From their own webpage: "Package Everything!"
+> - "And share your repositories with clients or colleagues."
 
-![](images/github.png)
+# The IOOS Channel
 
-> - (or Filipe Fernandes)
-
-# The problem
-
-- Integrated Ocean Observing System (IOOS) likes python,
-- but, but...
-
-![](images/io_0002s_0003_layer10copy3_med.jpg)
-
-- ... how to get hundreds of scientist using different platforms, and a myriad of configurations to reproduce their results?
-
-> Or just to **get it** running!!!
-
-# Can conda do it?
-
-> - I like to think I am a dedicated "sysadmin."
-> - Maybe almost like this guy ![](images/devotion_to_duty.png)
-> - So when my boss told me to consider conda I promptly answer:
-> - **NO!**
-> - We need stable tools like `pip` and `virtualenv`
-> - Build a binary in your local machine?  Upload it?  Someone else will install that thing?  **NO WAY!!!**
-
-# The IOOS ~~Binstar~~ Anaconda Channel
-
-> - 107 packages active packages.  (Some made it into the default channel and were deprecated along the way.)
+> - 107 packages
 > - Linux, Windows and OSX
 > - Some really hard to compile like `iris`, `nco` and `gridgen`...
 > - ...are now available via just `conda install -c ioos iris`
 
 
-# How we use it?
+# How to use it?
 
 ```bash
 
@@ -56,6 +36,15 @@ export PATH=$HOME/miniconda/bin:$PATH && source activate IOOS
 That is it!
 
 
+# IOOS requirements file
+
+------- ---------- ----------------
+iris    mpld3      pyoos
+pandas  folium     rdflib
+geojson requests   ipython-notebook
+xlrd    mplleaflet oceans
+qrcode  utilities
+------- ---------- ----------------
 
 # Downloads
 
@@ -72,7 +61,6 @@ That is it!
 > - [AppVeyor](http://www.appveyor.com/) &#10139; Windows
 > - [Travis-CI](https://travis-ci.org/) &#10139; OSX
 > - [Centos docker container](https://registry.hub.docker.com/u/ocefpaf/centos64-conda-obvious-ci/) &#10139; Linux
-> - (Or just forget about all that and go to @pelson's talk tomorrow!) 
 
 # PRs
 
@@ -92,10 +80,10 @@ That is it!
 
 # Thanks!
 
+### [https://binstar.org/ioos](https://binstar.org/ioos)
+
 ![http://xkcd.com/303/](images/compiling.png)
 
 ### Acknowledgements
 
 *We would like to thank SECOORA for the funding support. We  would also like to thank the contributions of members of NOAA/IOOS, and Principal investigators.*
-
-**Special thanks to SciPy for the financial aid**
